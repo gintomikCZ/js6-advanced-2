@@ -1,0 +1,36 @@
+employees => companies .... N : 1
+
+table employees
+____________
+employeeid (PK), first, last, companyid (FK)
+
+table companies
+____________
+companyid (PK), company, city
+
+_____________________________________
+
+employees => companies ..... N : M
+
+table employees
+____________
+employeeid (PK), first, last
+
+table companies
+____________
+companyid (PK), company, city
+
+
+table employeescompanies
+_____________
+id, employeeid (FK), companyid (FK), salary, type
+1, 1, 2 (zaměstnanec 1 pracuje ve firmě 2)
+2, 1, 3 (zaměstnanec 1 pracuje ve firmě 3)
+3, 8, 2 (zam. 8 pracuje ve firmě 2)
+
+
+
+input text - first
+input text - last
+input text - position
+select (options)

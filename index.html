@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="loading">... loading data ...</div>
+    <form class="invisible">
+      <input type="hidden" id="id">
+      <div class="form-control">
+        <label for="first">first name</label>
+        <input id="first">
+      </div>
+      <div class="form-control">
+        <label for="last">last name</label>
+        <input id="last">
+      </div>
+      <div class="form-control">
+        <label for="position">position</label>
+        <input id="position">
+      </div>
+      <div class="form-control">
+        <label for="companyid">company</label>
+        <select id="companyid" value="16">
+          <option value=""></option>
+        </select>
+      </div>
+      <div class="form-control">
+        <button>submit</button>
+      </div>
+    </form>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
